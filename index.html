@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Froggie's Wireframe</title>
+    <style>
+  
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #17ee2d;
+        }
+        header, footer {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            padding: 20px;
+            color: rgb(23, 82, 245);
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+        }
+    
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .left-column {
+            float: left;
+            width: 48%;
+            margin-right: 4%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .right-column {
+            float: left;
+            width: 48%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    
+        img {
+            max-width: 100%;
+            height: auto;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        .blurred {
+            filter: blur(2px);
+            margin: 20px 0;
+        }
+        .shadow-box {
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+        /* Footer styling */
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Flexbox Froggie's Wireframe</h1>
+    <nav>
+        <a href="#">Stuff</a>
+        <a href="#">More Stuff</a>
+        <a href="#">Even more Stuff</a>
+        <a href="#">All the Stuff</a>
+    </nav>
+</header>
+
+<div class="container clearfix">
+ 
+    <div class="left-column">
+        <h2>Flexbox Froggies history</h2>
+        <img src="Flexbox froggy.png">
+        <p>Flexbox Froggy is an educational game created to teach web developers the intricacies of the CSS Flexbox layout system in a fun and interactive way. The game was developed by Codepip (formerly known as Thomas Park) in 2016 as a creative way to help learners grasp the often confusing concepts of Flexbox, one of the most powerful layout techniques in modern web development.</p>
+        <div class="blurred">
+            <p>This is an easter egg congradulations for finding it!</p>
+        </div>
+    </div>
+
+  
+    <div class="right-column">
+        <h2>Stories of Flexbox Froggy</h2>
+        <div class="shadow-box">
+            <h3>The Great River Rescue</h3>
+            <p>One day, Flexbox Froggy was hopping along the shores of Code River when he noticed a group of distressed tadpoles caught in the rapid current, unable to escape. With his mastery of alignment and spacing, Flexbox Froggy swiftly constructed a flexible, invisible bridge across the water, perfectly spaced for the tadpoles to hop along to safety. His quick thinking and ability to align the world to his will saved the young tadpoles, earning him the title of "The Guardian of Flow," admired by frogs and coders alike.</p>
+        </div>
+
+        <div class="shadow-box">
+            <h3>The Tower of Elements</h3>
+            <p>Flexbox Froggy’s fame spread when he saved the kingdom of Layoutville from a chaotic invasion of misplaced HTML elements. As the citizens struggled to organize their homes, Flexbox Froggy jumped in, aligning the elements into neat rows and columns, making sure every box had just the right amount of space. His powers of justify-content and align-items ensured perfect balance and harmony. The town celebrated his heroic efforts by naming their tallest building "The Flex Tower," a symbol of order and alignment in the digital world.</p>
+        </div>
+        
+    </div>
+</div>
+
+<footer>
+    <p>Follow us on:</p>
+    <a href="https://www.facebook.com/home.php?_rdr">Facebook</a>
+    <a href="https://x.com/i/flow/login">Twitter</a>
+    <a href="https://www.instagram.com/">Instagram</a>
+</footer>
+
+</body>
+</html>
